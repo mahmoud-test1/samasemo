@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Happy Birthday, Yasmin 🎀</title>
+
+  <!--
+  ================= EASY EDIT GUIDE =================
+  1) PHOTOS: Put 4 images in the SAME FOLDER as this file, named exactly:
+     photo1.jpg  -> the CENTER photo
+     photo2.jpg  -> the LEFT photo
+     photo3.jpg  -> the RIGHT photo
+     photo4.jpg  -> the BELOW photo
+     (Until you add them, pretty placeholder cards will show instead.)
+
+  2) MUSIC: Put a video file (the one with the birthday song in it) in
+     the same folder as this page, named exactly "music.mp4". The video
+     itself stays hidden — only the sound plays, in the background,
+     while visitors browse the page. It starts automatically (muted at
+     first, then full sound the moment the visitor taps/scrolls, since
+     browsers require that before allowing sound). Until you add the
+     file, nothing plays — no errors, it just waits for it.
+
+  3) VIDEO: Put a separate video file named "video.mp4" in the same
+     folder. It appears when Yasmin taps her name at the bottom of the
+     letter section. Until you add it, a placeholder shows instead.
+  =====================================================
+-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Quicksand:wght@400;500;600;700&family=Aref+Ruqaa:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="is-locked">
+
+  <!-- ================= LOCK SCREEN ================= -->
+  <div id="lock-screen">
+    <div class="lock-frame">
+
+      <div class="lock-cat" id="lock-cat">
+        <svg viewBox="0 0 200 220">
+          <defs>
+            <radialGradient id="lockHeadShade" cx="42%" cy="28%" r="75%">
+              <stop offset="0%" stop-color="#fffdfd"/>
+              <stop offset="60%" stop-color="#fff6f8"/>
+              <stop offset="100%" stop-color="#ffe3ec"/>
+            </radialGradient>
+            <linearGradient id="lockEarOuter" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffe3ec"/>
+              <stop offset="100%" stop-color="#ffb8cf"/>
+            </linearGradient>
+            <radialGradient id="lockEarInner" cx="50%" cy="70%" r="70%">
+              <stop offset="0%" stop-color="#ffe3ec"/>
+              <stop offset="100%" stop-color="#ff8fab"/>
+            </radialGradient>
+            <radialGradient id="lockIris" cx="45%" cy="40%" r="65%">
+              <stop offset="0%" stop-color="#fff3d6"/>
+              <stop offset="45%" stop-color="#f3c66b"/>
+              <stop offset="80%" stop-color="#e0537c"/>
+              <stop offset="100%" stop-color="#c73866"/>
+            </radialGradient>
+            <linearGradient id="lockBow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f3c66b"/>
+              <stop offset="100%" stop-color="#e0537c"/>
+            </linearGradient>
+            <linearGradient id="lockMuzzle" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#fffdfd"/>
+              <stop offset="100%" stop-color="#ffe3ec"/>
+            </linearGradient>
+            <clipPath id="lockEyeClipL"><path d="M60 118 C64 106 92 106 96 118 C92 133 64 133 60 118 Z"/></clipPath>
+            <clipPath id="lockEyeClipR"><path d="M104 118 C108 106 136 106 140 118 C136 133 108 133 104 118 Z"/></clipPath>
+            <filter id="lockSoftShadow" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="4"/>
+            </filter>
+          </defs>
+
+          <ellipse cx="100" cy="196" rx="52" ry="10" fill="#c73866" opacity=".13" filter="url(#lockSoftShadow)"/>
+
+          <g id="lockIdleBody">
+            <g class="lock-head-tilt">
+              <path class="lock-ear-left" d="M48 82 Q30 30 14 6 Q52 14 82 58 Q64 66 48 82 Z" fill="url(#lockEarOuter)"/>
+              <path d="M51 74 Q38 42 27 20 Q48 30 63 54 Q56 62 51 74 Z" fill="url(#lockEarInner)"/>
+
+              <path class="lock-ear-right" d="M152 82 Q170 30 186 6 Q148 14 118 58 Q136 66 152 82 Z" fill="url(#lockEarOuter)"/>
+              <path d="M149 74 Q162 42 173 20 Q152 30 137 54 Q144 62 149 74 Z" fill="url(#lockEarInner)"/>
+
+              <path d="M100 58 C 142 58 168 92 166 130 C 164 164 142 190 100 192
+                       C 58 190 36 164 34 130 C 32 92 58 58 100 58 Z" fill="url(#lockHeadShade)"/>
+
+              <path d="M36 118 Q22 132 26 152 Q34 162 46 160 Q40 140 48 122 Q42 116 36 118 Z" fill="url(#lockHeadShade)" opacity=".9"/>
+              <path d="M164 118 Q178 132 174 152 Q166 162 154 160 Q160 140 152 122 Q158 116 164 118 Z" fill="url(#lockHeadShade)" opacity=".9"/>
+
+              <path d="M100 132 C 122 132 136 146 132 166 C 128 182 114 190 100 190
+                        C 86 190 72 182 68 166 C 64 146 78 132 100 132 Z" fill="url(#lockMuzzle)"/>
+
+              <ellipse class="lock-blush" cx="58" cy="148" rx="9" ry="5.5" fill="#ff8fab"/>
+              <ellipse class="lock-blush" cx="142" cy="148" rx="9" ry="5.5" fill="#ff8fab"/>
+
+              <g class="lock-whisker" stroke="#ffffff" stroke-width="1.1" stroke-linecap="round" opacity=".85">
+                <path d="M70 158 Q40 152 12 148" fill="none"/>
+                <path d="M70 165 Q38 165 10 167" fill="none"/>
+                <path d="M72 172 Q42 180 16 188" fill="none"/>
+                <path d="M130 158 Q160 152 188 148" fill="none"/>
+                <path d="M130 165 Q162 165 190 167" fill="none"/>
+                <path d="M128 172 Q158 180 184 188" fill="none"/>
+              </g>
+
+              <g id="lockEyes">
+                <path d="M60 118 C64 106 92 106 96 118 C92 133 64 133 60 118 Z" fill="#fffaf0"/>
+                <path d="M104 118 C108 106 136 106 140 118 C136 133 108 133 104 118 Z" fill="#fffaf0"/>
+
+                <g clip-path="url(#lockEyeClipL)">
+                  <circle id="lockIrisL" cx="78" cy="118" r="10.5" fill="url(#lockIris)"/>
+                  <ellipse class="lock-pupil" id="lockPupilL" cx="78" cy="118" rx="2.6" ry="10.5" fill="#3a1420"/>
+                  <circle cx="81.5" cy="112.5" r="2" fill="#fff" opacity=".9"/>
+                </g>
+                <g clip-path="url(#lockEyeClipR)">
+                  <circle id="lockIrisR" cx="122" cy="118" r="10.5" fill="url(#lockIris)"/>
+                  <ellipse class="lock-pupil" id="lockPupilR" cx="122" cy="118" rx="2.6" ry="10.5" fill="#3a1420"/>
+                  <circle cx="125.5" cy="112.5" r="2" fill="#fff" opacity=".9"/>
+                </g>
+
+                <path d="M60 118 C64 106 92 106 96 118" fill="none" stroke="#c73866" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M104 118 C108 106 136 106 140 118" fill="none" stroke="#c73866" stroke-width="1.8" stroke-linecap="round"/>
+              </g>
+
+              <path d="M94 142 L106 142 L100 150 Z" fill="#e0537c" stroke="#c73866" stroke-width=".6"/>
+              <path class="lock-mouth-normal" d="M100 150 L100 156 M100 156 Q92 163 84 159 M100 156 Q108 163 116 159" stroke="#c73866" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+              <path class="lock-mouth-happy" d="M100 150 L100 154 M80 155 Q100 172 120 155" stroke="#c73866" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+              <g transform="translate(100 52) rotate(-4)">
+                <path d="M-4 0 C -8 -9 -21 -9 -24 0 C -21 9 -8 9 -4 0 Z" fill="url(#lockBow)" stroke="#c73866" stroke-width="1"/>
+                <path d="M4 0 C 8 -9 21 -9 24 0 C 21 9 8 9 4 0 Z" fill="url(#lockBow)" stroke="#c73866" stroke-width="1"/>
+                <circle cx="0" cy="0" r="5" fill="#f3c66b" stroke="#c73866" stroke-width="1"/>
+              </g>
+            </g>
+
+            <g class="lock-paws" id="lock-paws">
+              <path d="M78 160 C 64 160 55 150 56 137 C 57 126 66 119 78 119 C 90 119 99 126 100 137 C 101 150 92 160 78 160 Z" fill="url(#lockMuzzle)" stroke="#ffb8cf" stroke-width="1.2"/>
+              <path d="M122 160 C 136 160 145 150 144 137 C 143 126 134 119 122 119 C 110 119 101 126 100 137 C 99 150 108 160 122 160 Z" fill="url(#lockMuzzle)" stroke="#ffb8cf" stroke-width="1.2"/>
+              <g fill="#ffb8cf" opacity=".7">
+                <ellipse cx="66" cy="130" rx="3.6" ry="4.4"/>
+                <ellipse cx="77" cy="126" rx="3.6" ry="4.4"/>
+                <ellipse cx="88" cy="130" rx="3.6" ry="4.4"/>
+                <ellipse cx="112" cy="130" rx="3.6" ry="4.4"/>
+                <ellipse cx="123" cy="126" rx="3.6" ry="4.4"/>
+                <ellipse cx="134" cy="130" rx="3.6" ry="4.4"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <span class="lock-eyebrow">Enter Pass</span>
+      <h1 class="lock-title">A Little Secret</h1>
+      <p class="lock-sub">This little corner is reserved for one person only.<br>Enter the day and month to step inside.
+      </p>
+
+      <form id="lock-form" autocomplete="off">
+        <div class="lock-fields lock-fields-stacked">
+          <div class="lock-field">
+            <label for="lock-day">Day</label>
+            <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="2" id="lock-day" placeholder="DD"
+              aria-label="Day">
+          </div>
+          <div class="lock-field">
+            <label for="lock-month">Month</label>
+            <input type="tel" inputmode="numeric" pattern="[0-9]*" maxlength="2" id="lock-month" placeholder="MM"
+              aria-label="Month">
+          </div>
+        </div>
+
+        <button type="submit" class="lock-btn"><span>Unlock</span></button>
+        <p class="lock-error" id="lock-error">That's not quite it — please try again.</p>
+      </form>
+    </div>
+    <div class="lock-sheen"></div>
+  </div>
+
+  <div class="bg-dots"></div>
+
+  <!-- ================= LANDING ================= -->
+  <section id="landing">
+    <span class="hero-eyebrow">a little something for</span>
+    <h1 class="hero-title" id="hero-title"></h1>
+    <div class="hero-name">Yasmin</div>
+    <p class="hero-sub">Wishing you a day as sweet, warm and lovely as you are. Scroll down for a little surprise 🎀</p>
+    <a href="#gallery" class="scroll-cue">
+      <span>scroll</span>
+      <span class="arrow">↓</span>
+    </a>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery">
+    <div class="section-head">
+      <span class="eyebrow">memory lane</span>
+      <h2>Our favorite moments</h2>
+      <p>A few pictures worth smiling over</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="photo-card transition-delay-2" id="photo-left" data-src="photo_2026-08-03_14-36-42.jpg"></div>
+      <div class="photo-card transition-delay-1" id="photo-center" data-src="photo_1_2026-07-23_19-00-39.jpg"></div>
+      <div class="photo-card transition-delay-3" id="photo-right" data-src="photo_2_2026-07-23_19-00-39.jpg"></div>
+      <div class="photo-card transition-delay-4" id="photo-below" data-src="photo_4_2026-08-02_21-51-31.jpg"></div>
+    </div>
+  </section>
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery">
+    <div class="section-head">
+      <span class="eyebrow">Best Memories</span>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="photo-card transition-delay-2" id="photo-left" data-src="photo_4_2026-08-16_07-33-53.jpg"></div>
+      <div class="photo-card transition-delay-1" id="photo-center" data-src="photo_2026-08-16_07-41-10.jpg"></div>
+      <div class="photo-card transition-delay-3" id="photo-right" data-src="photo_2026-08-16_07-42-06.jpg"></div>
+      <div class="photo-card transition-delay-4" id="photo-below" data-src="photo_5_2026-08-16_07-33-53.jpg"></div>
+    </div>
+  </section>
+  <!-- ================= LETTER ================= -->
+  <section id="letter-section">
+    <div class="section-head">
+      <span class="eyebrow">one more thing</span>
+      <h2>A little letter for you</h2>
+      <p>Tap the envelope to open it</p>
+    </div>
+
+    <div class="envelope-wrap">
+      <div class="envelope" id="envelope">
+        <div class="envelope-shadow"></div>
+        <div class="env-body">
+          <div class="letter-paper">
+            <p>To Yasmin, with love</p>
+          </div>
+        </div>
+        <div class="env-flap"></div>
+        <div class="env-seal">🌸</div>
+      </div>
+      <p class="hint">✨ tap to open ✨</p>
+    </div>
+
+    <!--
+    STICKER PLACEHOLDERS: to add your own sticker images later, put two
+    image files (transparent PNGs work best) in the same folder as this
+    page, named exactly "sticker1.png" and "sticker2.png". Nothing else
+    needs to change — the placeholders below will be replaced automatically.
+  -->
+    <div class="letter-stickers-wrap" id="letter-stickers-wrap">
+      <div class="burst-stage" id="burst-stage"></div>
+      <div class="arabic-card" id="arabic-card" lang="ar" dir="rtl">
+        كل سنة وإنتي طيبة يا ياسمين، ويارب تكون السنة دي مليانة فرحة ونجاح وحاجات حلوة كتير تستاهليها. بجد مبسوط إننا
+        صحاب، وأتمنى أشوفك دايمًا سعيدة ومحققة كل اللي بتتمنيه. ربنا يديم ضحكتك ويخلي أيامك كلها أجمل من اللي قبلها. عيد
+        ميلاد سعيد.
+        <span class="signature">Happy Birthday 🎀</span>
+      </div>
+      <div class="sticker-row" id="sticker-row">
+        <div class="sticker sticker-left" id="sticker-left" data-src="photo_2026-08-04_15-25-36.jpg"></div>
+        <div class="sticker sticker-right" id="sticker-right" data-src="photo_2026-08-04_15-25-42.jpg"></div>
+      </div>
+    </div>
+
+    <!-- Name button -> reveals a personal video. Put your video file named
+       "video.mp4" next to this page and it will show up automatically. -->
+    <div class="name-reveal-wrap" id="name-reveal">
+      <button class="name-btn" id="name-btn" type="button">ياسمين</button>
+      <p class="name-hint">اضغطي على اسمك 💗</p>
+    </div>
+
+    <div class="video-section" id="video-section">
+      <video id="birthday-video" controls playsinline preload="metadata">
+        <source src="IMG_2944.mp4" type="video/mp4">
+      </video>
+      <div class="video-placeholder" id="video-placeholder">
+        🎬 لسه معملتيش رفع الفيديو<br>
+        ضيفي ملف اسمه <b>video.mp4</b> جنب صفحة الموقع وهيظهر هنا لوحده
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    made with <span class="heart">♥</span> for Yasmin
+  </footer>
+
+  <!-- ================= MUSIC ================= -->
+  <button id="music-fab" aria-label="Play or pause music">🎵</button>
+  <video id="bg-music" loop preload="auto" playsinline muted>
+    <source src="IMG_2109.MP4" type="video/mp4">
+    <source src="IMG_2109.MP4" type="video/webm">
+  </video>
+
+  <!-- ================= FLOATING CHAT ================= -->
+  <button id="chat-fab" aria-label="افتحي الشات">
+    <span class="chat-fab-icon">💬</span>
+    <span class="chat-fab-live"></span>
+  </button>
+  <div id="chat-window">
+    <div id="chat-header">
+      <button id="chat-back" aria-label="رجوع" type="button">←</button>
+      <span>✨ اترك رسالة</span>
+    </div>
+    <div id="chat-body">
+      <div class="chat-note" id="chat-note" style="display:none;"></div>
+    </div>
+    <div id="chat-input-row">
+      <div id="chat-toast"></div>
+      <input type="text" id="chat-input" placeholder="اكتبي رسالتك هنا..." maxlength="500" />
+      <input type="file" id="chat-photo-input" accept="image/*" multiple style="display:none;" />
+      <button id="chat-attach" aria-label="إرسال صورة" type="button">
+        <span class="attach-icon">📎</span>
+      </button>
+      <button id="chat-mic" aria-label="تسجيل رسالة صوتية" type="button">
+        <span class="mic-icon">🎤</span>
+      </button>
+      <button id="chat-send" aria-label="إرسال">
+        <span class="send-icon">➤</span>
+        <span class="spinner"></span>
+      </button>
+      <div id="chat-record-ui">
+        <button id="chat-record-cancel" aria-label="إلغاء التسجيل" type="button">✕</button>
+        <span id="chat-record-dot"></span>
+        <span id="chat-record-timer">0:00</span>
+        <button id="chat-record-send" aria-label="إرسال الرسالة الصوتية" type="button">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="chat-lightbox">
+    <img id="chat-lightbox-img" src="" alt="صورة" />
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- ================= LOCK SCREEN CAT (visual only, does not touch lock logic) ================= -->
+  <script>
+  (function(){
+    "use strict";
+    var cat = document.getElementById('lock-cat');
+    var paws = document.getElementById('lock-paws');
+    var eyesGroup = document.getElementById('lockEyes');
+    var pupilL = document.getElementById('lockPupilL');
+    var pupilR = document.getElementById('lockPupilR');
+    var irisL = document.getElementById('lockIrisL');
+    var irisR = document.getElementById('lockIrisR');
+    var dayInput = document.getElementById('lock-day');
+    var monthInput = document.getElementById('lock-month');
+    var errorEl = document.getElementById('lock-error');
+    var lockScreen = document.getElementById('lock-screen');
+    if(!cat || !paws || !dayInput || !monthInput) return;
+
+    function coverEyes(cover){ paws.classList.toggle('up', cover); }
+
+    function blink(){
+      if(!paws.classList.contains('up')){
+        eyesGroup.classList.add('blink');
+        setTimeout(function(){ eyesGroup.classList.remove('blink'); }, 130);
+      }
+      setTimeout(blink, 2600 + Math.random() * 3200);
+    }
+    setTimeout(blink, 2000);
+
+    function idleGlance(){
+      var engaged = document.activeElement === dayInput || document.activeElement === monthInput;
+      if(!engaged && !paws.classList.contains('up')){
+        var dx = (Math.random() - 0.5) * 10;
+        pupilL.setAttribute('cx', 78 + dx);
+        pupilR.setAttribute('cx', 122 + dx);
+        irisL.setAttribute('cx', 78 + dx);
+        irisR.setAttribute('cx', 122 + dx);
+      }
+      setTimeout(idleGlance, 2200 + Math.random() * 2400);
+    }
+    setTimeout(idleGlance, 1600);
+
+    dayInput.addEventListener('focus', function(){ coverEyes(false); scrollFieldIntoView(dayInput); });
+    dayInput.addEventListener('input', function(){
+      var t = Math.max(0, Math.min(1, dayInput.value.length / 2));
+      var dx = (t - 0.5) * 10;
+      pupilL.setAttribute('cx', 78 + dx);
+      pupilR.setAttribute('cx', 122 + dx);
+      irisL.setAttribute('cx', 78 + dx);
+      irisR.setAttribute('cx', 122 + dx);
+    });
+
+    // shy paws while typing the month, peeking again once done
+    monthInput.addEventListener('focus', function(){ coverEyes(monthInput.value.length > 0); scrollFieldIntoView(monthInput); });
+    monthInput.addEventListener('input', function(){ coverEyes(monthInput.value.length > 0); });
+    monthInput.addEventListener('blur', function(){ coverEyes(false); });
+
+    // --- keep the cat & card visible above the keyboard on phones ---
+    // iOS Safari doesn't shrink the layout viewport when the keyboard opens
+    // (only the visual viewport does), so we watch visualViewport directly.
+    function scrollFieldIntoView(el){
+      setTimeout(function(){
+        try{ el.scrollIntoView({ block:'center', behavior:'smooth' }); }catch(e){}
+      }, 60);
+    }
+
+    if(window.visualViewport && lockScreen){
+      var baseHeight = window.innerHeight;
+      window.visualViewport.addEventListener('resize', function(){
+        var vv = window.visualViewport;
+        var shrunk = (baseHeight - vv.height) > 120; // keyboard likely open
+        lockScreen.classList.toggle('kb-open', shrunk);
+      });
+    }
+
+    // watch for the existing lock logic's own success/fail signals
+    if(errorEl){
+      var obs = new MutationObserver(function(){
+        if(errorEl.classList.contains('show')){
+          coverEyes(false);
+          cat.classList.remove('happy');
+          cat.classList.remove('sad');
+          void cat.offsetWidth;
+          cat.classList.add('sad');
+          setTimeout(function(){ cat.classList.remove('sad'); }, 550);
+        }
+      });
+      obs.observe(errorEl, { attributes:true, attributeFilter:['class'] });
+    }
+    if(lockScreen){
+      var obs2 = new MutationObserver(function(){
+        if(lockScreen.classList.contains('lock-hidden')){
+          coverEyes(false);
+          cat.classList.add('happy');
+        }
+      });
+      obs2.observe(lockScreen, { attributes:true, attributeFilter:['class'] });
+    }
+  })();
+  </script>
+</body>
+
+</html>
